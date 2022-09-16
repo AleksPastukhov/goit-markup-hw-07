@@ -1,0 +1,40 @@
+/* Advantage */
+
+.advantage-section--padding-top {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.advantages-set {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages-set__item {
+  flex-basis: 270px;
+}
+
+.advantages-set__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-bg-color;
+}
+
+.advantages-set__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.advantages-set__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  line-height: 1.71;
+}

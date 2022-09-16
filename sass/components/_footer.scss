@@ -1,0 +1,117 @@
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-footer-color;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  color: $white-text-color;
+  margin-bottom: 20px;
+}
+
+.adress {
+  font-style: inherit;
+}
+
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress__link {
+  line-height: 1.71;
+  color: $secondary-text-color-a60;
+  text-decoration: none;
+  transition: color $duration-and-cubic-bezier;
+}
+
+.adress__link:hover,
+.adress__link:focus {
+  color: $accent-text-color;
+}
+
+.footer-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white-text-color;
+}
+
+/* Footer form */
+
+.footer-form {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer-form__name {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white-text-color;
+}
+
+.footer-form__input {
+  padding-left: 16px;
+  min-width: 358px;
+  min-height: 50px;
+  background-color: transparent;
+  border: 1px solid $footer-form-border-color;
+  filter: drop-shadow(0px 4px 4px $box-shadow-color-a15);
+  border-radius: 4px;
+  color: $white-text-color;
+  transition: border-color $duration-and-cubic-bezier;
+}
+
+.footer-form__input::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: $secondary-text-color-a60;
+}
+
+.footer-form__input:focus {
+  border-color: $accent-border-color;
+  outline: none;
+}
+
+.footer-form__btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: $accent-bg-color;
+  box-shadow: 0px 4px 4px $box-shadow-color-a15;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: $white-text-color;
+  min-height: 50px;
+  min-width: 200px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.footer-form__icon {
+  fill: $white-icon-color;
+}

@@ -1,6 +1,7 @@
 /* Team */
 
 .team-card-set {
+  @extend %list;
   display: flex;
   justify-content: space-between;
 }
@@ -26,7 +27,7 @@
     padding-top: 30px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: (19 / 16);
     color: $title-text-color;
   }
 
@@ -35,12 +36,13 @@
     margin-bottom: 0;
     padding-bottom: 16px;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: (19 / 16);
   }
 }
 /* Social networks */
 
 .social-networks {
+  @extend %list;
   display: flex;
   gap: 10px;
   justify-content: center;

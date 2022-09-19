@@ -3,14 +3,14 @@
 .btn-list {
   display: flex;
   justify-content: center;
-}
 
-.btn-list--margin-bottom {
-  margin-bottom: 50px;
-}
+  &--margin-bottom {
+    margin-bottom: 50px;
+  }
 
-.btn-list__item:not(:last-child) {
-  margin-right: 8px;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 /* Button */
@@ -32,98 +32,97 @@
 
   transition: color $duration-and-cubic-bezier, background-color $duration-and-cubic-bezier,
     box-shadow $duration-and-cubic-bezier;
-}
 
-.button--current {
-  background-color: $accent-bg-color;
-  color: $white-text-color;
-}
+  &--current {
+    background-color: $accent-bg-color;
+    color: $white-text-color;
+  }
 
-.button:hover,
-.button:focus {
-  color: $white-text-color;
-  background-color: $accent-bg-color;
-  box-shadow: 0px 1px 1px $box-shadow-color-a12, 0px 4px 4px $box-shadow-color-a06,
-    1px 4px 6px $box-shadow-color-a16;
+  &:hover,
+  &:focus {
+    color: $white-text-color;
+    background-color: $accent-bg-color;
+    box-shadow: 0px 1px 1px $box-shadow-color-a12, 0px 4px 4px $box-shadow-color-a06,
+      1px 4px 6px $box-shadow-color-a16;
+  }
 }
-
 /* Portfolio set */
 
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
 
-.portfolio__link {
-  display: inline-block;
+  &__link {
+    display: inline-block;
 
-  color: currentColor;
-  text-decoration: none;
-  box-shadow: 0px 1px 1px transparent, 0px 4px 4px transparent, 1px 4px 6px transparent;
+    color: currentColor;
+    text-decoration: none;
+    box-shadow: 0px 1px 1px transparent, 0px 4px 4px transparent, 1px 4px 6px transparent;
 
-  transition: box-shadow $duration-and-cubic-bezier;
-}
+    transition: box-shadow $duration-and-cubic-bezier;
+  }
 
-.portfolio__link:hover,
-.portfolio__link:focus {
-  box-shadow: 0px 1px 1px $box-shadow-color-a12, 0px 4px 4px $box-shadow-color-a06,
-    1px 4px 6px $box-shadow-color-a16;
-}
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 1px 1px $box-shadow-color-a12, 0px 4px 4px $box-shadow-color-a06,
+      1px 4px 6px $box-shadow-color-a16;
+  }
 
-.portfolio__overlay-box {
-  position: relative;
-  overflow: hidden;
-}
+  &__overlay-box {
+    position: relative;
+    overflow: hidden;
+  }
 
-.portfolio__img {
-  display: block;
-}
+  &__img {
+    display: block;
+  }
 
-.portfolio__overlay-text {
-  position: absolute;
-  top: 0;
-  left: 0;
+  &__overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  margin: 0;
-  padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  color: $white-text-color;
-  background-color: $overlay-bg-color;
+    margin: 0;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    color: $white-text-color;
+    background-color: $overlay-bg-color;
 
-  transform: translateY(100%);
-  transition: transform $duration-and-cubic-bezier;
-}
+    transform: translateY(100%);
+    transition: transform $duration-and-cubic-bezier;
+  }
 
-.portfolio__link:hover .portfolio__overlay-text,
-.portfolio__link:hover .portfolio__overlay-text {
-  transform: translateY(0);
-}
+  &__link:hover &__overlay-text,
+  &__link:hover &__overlay-text {
+    transform: translateY(0);
+  }
 
-.portfolio__meta {
-  padding: 20px 24px;
+  &__meta {
+    padding: 20px 24px;
 
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
 
-.portfolio__title {
-  margin-top: 0;
-  margin-bottom: 4px;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 4px;
 
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $title-text-color;
-}
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+  }
 
-.portfolio__text {
-  margin-top: 0;
-  margin-bottom: 0;
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
 
-  font-size: 16px;
-  line-height: 1.88;
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }

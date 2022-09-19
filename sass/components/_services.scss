@@ -7,13 +7,12 @@
 
 .services-card {
   position: relative;
-}
 
-.services-card__img {
+&__img {
   display: block;
 }
 
-.services-card__title {
+&__title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -26,4 +25,5 @@
   text-transform: uppercase;
   color: $white-text-color;
   background: $about-bg-color;
+}
 }

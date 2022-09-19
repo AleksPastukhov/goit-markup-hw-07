@@ -1,4 +1,4 @@
-/* Утиліти */
+// Утиліти
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -10,11 +10,4 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
 }

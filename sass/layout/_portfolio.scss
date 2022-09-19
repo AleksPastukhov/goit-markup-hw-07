@@ -1,4 +1,4 @@
-/* Portfolio page */
+// Portfolio page
 
 .btn-list {
   @extend %list;
@@ -14,7 +14,7 @@
   }
 }
 
-/* Button */
+// Button
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -47,7 +47,8 @@
       1px 4px 6px $box-shadow-color-a16;
   }
 }
-/* Portfolio set */
+
+// Portfolio set
 
 .portfolio {
   @extend %list;

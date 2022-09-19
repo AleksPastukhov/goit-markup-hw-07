@@ -1,4 +1,4 @@
-/* Team */
+// Team
 
 .team-card-set {
   @extend %list;
@@ -39,7 +39,8 @@
     line-height: (19 / 16);
   }
 }
-/* Social networks */
+
+// Social networks
 
 .social-networks {
   @extend %list;

@@ -61,68 +61,6 @@
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button" data-modal-open type="button">Замовити послугу</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="modal__close-btn" type="button" data-modal-close>
-                <svg class="modal__icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#close-black"></use>
-                </svg>
-              </button>
-              <form class="order-form" name="hero-order-form">
-                <strong class="order-form__title">Залиште свої дані, ми вам передзвонимо </strong>
-                <div class="user-data user-data--margin-bottom">
-                  <label class="field field--margin-bottom">
-                    <span class="field__name">Імʼя</span>
-                    <span class="field__input-wrapper">
-                      <input class="field__input" type="text" name="user-name" />
-                      <svg class="field__icon" width="18px" height="18px">
-                        <use href="./images/icons.svg#person-black"></use>
-                      </svg>
-                    </span>
-                  </label>
-                  <label class="field field--margin-bottom">
-                    <span class="field__name">Телефон</span>
-                    <span class="field__input-wrapper">
-                      <input class="field__input" type="tel" name="phone-number" />
-                      <svg class="field__icon" width="18px" height="18px">
-                        <use href="./images/icons.svg#phone-black"></use>
-                      </svg>
-                    </span>
-                  </label>
-                  <label class="field field--margin-bottom">
-                    <span class="field__name">Пошта</span>
-                    <span class="field__input-wrapper">
-                      <input class="field__input" type="email" name="mail-address" />
-                      <svg class="field__icon" width="18px" height="18px">
-                        <use href="./images/icons.svg#email-black"></use>
-                      </svg>
-                    </span>
-                  </label>
-                  <label class="field">
-                    <span class="field__name">Коментар</span>
-                    <textarea
-                      class="field__input field__textarea"
-                      placeholder="Введіть текст"
-                      name="coments"
-                    ></textarea>
-                  </label>
-                </div>
-                <div class="subscription-option subscription-option--margin-bottom">
-                  <label class="checkbox-field">
-                    <input class="checkbox-field__input" type="checkbox" name="public-offer" />
-                    <svg class="checkbox-field__icon" width="16px" height="15px">
-                      <use href="./images/icons.svg#icon-check"></use>
-                    </svg>
-                    <span
-                      >Погоджуюся з розсилкою та приймаю
-                      <a class="checkbox-field__link" href="">Умови договору</a></span
-                    >
-                  </label>
-                </div>
-                <button class="order-form__button" type="submit">Відправити</button>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -640,6 +578,70 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close-btn" type="button" data-modal-close>
+          <svg class="modal__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+        <form class="order-form" name="hero-order-form">
+          <strong class="order-form__title">Залиште свої дані, ми вам передзвонимо </strong>
+          <div class="user-data user-data--margin-bottom">
+            <label class="field field--margin-bottom">
+              <span class="field__name">Імʼя</span>
+              <span class="field__input-wrapper">
+                <input class="field__input" type="text" name="user-name" />
+                <svg class="field__icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#person-black"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="field field--margin-bottom">
+              <span class="field__name">Телефон</span>
+              <span class="field__input-wrapper">
+                <input class="field__input" type="tel" name="phone-number" />
+                <svg class="field__icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#phone-black"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="field field--margin-bottom">
+              <span class="field__name">Пошта</span>
+              <span class="field__input-wrapper">
+                <input class="field__input" type="email" name="mail-address" />
+                <svg class="field__icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#email-black"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="field">
+              <span class="field__name">Коментар</span>
+              <textarea
+                class="field__input field__textarea"
+                placeholder="Введіть текст"
+                name="coments"
+              ></textarea>
+            </label>
+          </div>
+          <div class="subscription-option subscription-option--margin-bottom">
+            <label class="checkbox-field">
+              <input class="checkbox-field__input" type="checkbox" name="public-offer" />
+              <svg class="checkbox-field__icon" width="16px" height="15px">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <span
+                >Погоджуюся з розсилкою та приймаю
+                <a class="checkbox-field__link" href="">Умови договору</a></span
+              >
+            </label>
+          </div>
+          <button class="order-form__button" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>

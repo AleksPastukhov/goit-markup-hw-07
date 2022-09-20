@@ -1,10 +1,8 @@
 @import './utils/variables';
 @import './utils/placeholders';
-@import './base/modern-normalize';
-@import './components/comon';
-@import './components/visually-hidden';
-@import './components/container';
-@import './components/section';
+@import './utils/normalize';
+@import './utils/visually-hidden';
+@import './base/common';
 @import './components/backdrop';
 @import './components/modal';
 @import './components/form';
@@ -15,4 +13,4 @@
 @import './layout/team';
 @import './layout/clients';
 @import './layout/footer';
-@import './layout/portfolio';
+@import './pages/portfolio';

@@ -1,3 +1,12 @@
+// Body
+.body {
+  font-family: $primary-font;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  background-color: $main-bg-color;
+}
+
 // Section
 .section {
   padding: 94px 0;
@@ -18,4 +27,12 @@
   &--secondary-bg-color {
     background-color: $secondary-bg-color;
   }
+}
+
+// Container
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 }

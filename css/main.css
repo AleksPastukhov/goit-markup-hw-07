@@ -249,14 +249,6 @@ summary {
   display: list-item;
 }
 
-.body {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  color: #757575;
-  background-color: #ffffff;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -271,11 +263,12 @@ summary {
   margin: -1px;
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
+.body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  background-color: #ffffff;
 }
 
 .section {
@@ -294,6 +287,13 @@ summary {
 }
 .section--secondary-bg-color {
   background-color: #f5f4fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 }
 
 .backdrop {

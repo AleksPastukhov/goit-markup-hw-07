@@ -43,8 +43,12 @@
     transition: color $duration-and-cubic-bezier;
   }
 
-  &__link:hover,
-  &__link:focus {
+  &__link--white-color {
+    color: $white-text-color;
+  }
+
+  &__link--hover-focus:hover,
+  &__link--hover-focus:focus {
     color: $accent-text-color;
   }
 }

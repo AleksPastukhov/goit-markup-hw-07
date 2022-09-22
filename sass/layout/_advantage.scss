@@ -22,21 +22,21 @@
     min-height: 120px;
     margin-bottom: 30px;
 
-    background-color: $secondary-bg-color;
+    background-color: var(--secondary-bg-color);
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
-    line-height: (16 / 14);
+    line-height: calc(16 / 14);
     text-transform: uppercase;
-    color: $title-text-color;
+    color: var(--title-text-color);
   }
 
   &__text {
     margin-top: 0;
     margin-bottom: 0;
 
-    line-height: (24 / 14);
+    line-height: calc(24 / 14);
   }
 }

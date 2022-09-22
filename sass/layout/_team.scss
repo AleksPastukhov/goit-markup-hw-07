@@ -1,5 +1,4 @@
 // Team
-
 .team-card-set {
   @extend %list;
   display: flex;
@@ -9,10 +8,10 @@
 .employee-card {
   text-align: center;
   width: 270px;
-  background: $main-bg-color;
+  background: var(--main-bg-color);
 
-  box-shadow: 0px 1px 3px $box-shadow-color-a12, 0px 1px 1px $box-shadow-color-a14,
-    0px 2px 1px $box-shadow-color-a20;
+  box-shadow: 0px 1px 3px var(--box-shadow-color-a12), 0px 1px 1px var(--box-shadow-color-a14),
+    0px 2px 1px var(--box-shadow-color-a20);
   border-radius: 0px 0px 4px 4px;
 
   &__img {
@@ -27,8 +26,8 @@
     padding-top: 30px;
     font-weight: 500;
     font-size: 16px;
-    line-height: (19 / 16);
-    color: $title-text-color;
+    line-height: calc(19 / 16);
+    color: var(--title-text-color);
   }
 
   &__position {
@@ -36,42 +35,6 @@
     margin-bottom: 0;
     padding-bottom: 16px;
     font-size: 16px;
-    line-height: (19 / 16);
-  }
-}
-
-// Social networks
-
-.social-networks {
-  @extend %list;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-
-  &--margin-bottom {
-    margin-bottom: 30px;
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 44px;
-    min-height: 44px;
-    border-radius: 50%;
-    text-decoration: none;
-    fill: $social-icon-color;
-    transition: fill $duration-and-cubic-bezier, background-color $duration-and-cubic-bezier;
-  }
-
-  &__link--white {
-    fill: $white-icon-color;
-    background-color: $icon-bg-color;
-  }
-
-  &__link:hover,
-  &__link:focus {
-    fill: $white-icon-color;
-    background-color: $accent-bg-color;
+    line-height: calc(19 / 16);
   }
 }

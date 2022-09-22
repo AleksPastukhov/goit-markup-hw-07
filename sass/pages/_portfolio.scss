@@ -25,26 +25,26 @@
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: (26 / 16);
-  color: $title-text-color;
-  background-color: $secondary-bg-color;
+  line-height: calc(26 / 16);
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
   box-shadow: 0px 1px 1px transparent, 0px 4px 4px transparent, 1px 4px 6px transparent;
   cursor: pointer;
 
-  transition: color $duration-and-cubic-bezier, background-color $duration-and-cubic-bezier,
-    box-shadow $duration-and-cubic-bezier;
+  transition: color var(--duration-and-cubic-bezier),
+    background-color var(--duration-and-cubic-bezier), box-shadow var(--duration-and-cubic-bezier);
 
   &--current {
-    background-color: $accent-bg-color;
-    color: $white-text-color;
+    background-color: var(--accent-bg-color);
+    color: var(--white-text-color);
   }
 
   &:hover,
   &:focus {
-    color: $white-text-color;
-    background-color: $accent-bg-color;
-    box-shadow: 0px 1px 1px $box-shadow-color-a12, 0px 4px 4px $box-shadow-color-a06,
-      1px 4px 6px $box-shadow-color-a16;
+    color: var(--white-text-color);
+    background-color: var(--accent-bg-color);
+    box-shadow: 0px 1px 1px var(--box-shadow-color-a12), 0px 4px 4px var(--box-shadow-color-a06),
+      1px 4px 6px var(--box-shadow-color-a16);
   }
 }
 
@@ -63,13 +63,13 @@
     text-decoration: none;
     box-shadow: 0px 1px 1px transparent, 0px 4px 4px transparent, 1px 4px 6px transparent;
 
-    transition: box-shadow $duration-and-cubic-bezier;
+    transition: box-shadow var(--duration-and-cubic-bezier);
   }
 
   &__link:hover,
   &__link:focus {
-    box-shadow: 0px 1px 1px $box-shadow-color-a12, 0px 4px 4px $box-shadow-color-a06,
-      1px 4px 6px $box-shadow-color-a16;
+    box-shadow: 0px 1px 1px var(--box-shadow-color-a12), 0px 4px 4px var(--box-shadow-color-a06),
+      1px 4px 6px var(--box-shadow-color-a16);
   }
 
   &__overlay-box {
@@ -90,12 +90,12 @@
     padding: 63px 24px;
     font-weight: 400;
     font-size: 18px;
-    line-height: (28 / 18);
-    color: $white-text-color;
-    background-color: $overlay-bg-color;
+    line-height: calc(28 / 18);
+    color: var(--white-text-color);
+    background-color: var(--overlay-bg-color);
 
     transform: translateY(100%);
-    transition: transform $duration-and-cubic-bezier;
+    transition: transform var(--duration-and-cubic-bezier);
   }
 
   &__link:hover &__overlay-text,
@@ -116,9 +116,9 @@
     margin-bottom: 4px;
 
     font-size: 18px;
-    line-height: (36 / 18);
+    line-height: calc(36 / 18);
     letter-spacing: 0.06em;
-    color: $title-text-color;
+    color: var(--title-text-color);
   }
 
   &__text {
@@ -126,6 +126,6 @@
     margin-bottom: 0;
 
     font-size: 16px;
-    line-height: (30 / 16);
+    line-height: calc(30 / 16);
   }
 }
